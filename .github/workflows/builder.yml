@@ -167,9 +167,8 @@ jobs:
             --${{ matrix.arch }} \
             --target /data \
             --cosign \
+            --test \
             --generic ${{ needs.init.outputs.version }}
-        env:
-          CAS_API_KEY: ${{ secrets.CAS_TOKEN }}
 
   version:
     name: Update version
