@@ -171,6 +171,7 @@ jobs:
             --generic ${{ needs.init.outputs.version }}
 
   version:
+    if: false
     name: Update version
     needs: ["init", "run_supervisor"]
     runs-on: ubuntu-latest
