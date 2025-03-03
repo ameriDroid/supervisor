@@ -213,6 +213,7 @@ jobs:
             --${{ matrix.arch }} \
             --target /data \
             --cosign \
+            --test \
             --generic ${{ needs.init.outputs.version }}
 
   version:
